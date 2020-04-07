@@ -1,0 +1,33 @@
+```{r}
+vectorexample=c(2,6,7)
+listexample=list(2,6,7)
+print(listexample)
+print(vectorexample)
+authorValues <- 
+  list( # 由c() 改list(), 元素命名
+    name="Martin老師", 
+    email="mtlin@gm.ntpu.edu.tw", time="2020-03-25T07:17:40Z"
+  )
+committerValues <- 
+  list( # 由c() 改list(), 元素命名
+    name="emilyluckey", 
+    email="emily007@gmail.com", time="2020-03-26T08:18:40Z"
+  )
+
+commit <- list(
+  author=authorValues,
+  commmitter=committerValues,
+  message="update"
+)
+
+print(commit)
+
+list(name="小名",`10801`=list(`個體經濟學`=list(teacher="alice",grade="85"),`總體經濟學`=list(teacher="mark",grade="73")))
+
+
+
+
+
+
+
+```
