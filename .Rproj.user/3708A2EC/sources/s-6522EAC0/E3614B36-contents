@@ -21,11 +21,13 @@ commit <- list(
 )
 
 print(commit)
-
+```
+```{r}
 list(name="小名",`10801`=list(`個體經濟學`=list(teacher="alice",grade="85"),`總體經濟學`=list(teacher="mark",grade="73")))
+`天氣預報`=list(date=c("0331","0401"),`台北`=list(maxtemperture="25",mintemperture="15"),`新北`=list(maxtemperture="25",mintemperture="14"))
+print(`天氣預報`)
 
-
-
+```
 
 
 
