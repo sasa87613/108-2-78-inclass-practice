@@ -1,0 +1,49 @@
+```{r}
+a <- c("1","b","TRUE")
+a
+a[[2]] <- "c" # 元素存在: 替換
+a[[4]] <- "7" # 元素不存在： 增加
+a[c(5,6)] <- c("J", "K")
+a
+```
+```{r}
+a[[7]]="Johnson"
+a
+a=c(a,"mary")
+a
+```
+```{r}
+library(lubridate)
+list1 <- 
+  list(
+    list(
+      name="Jack",
+      birthday=ymd("1998-03-21"),
+      status=c(height=177, weight=80)
+    )
+  )
+
+str(list1)
+
+```
+```{r}
+# 更改日期
+list1[[1]]$birthday <- ymd("1997-03-21")
+
+# 新增資料
+list1[[2]]=list(name="blue",birthday=ymd(1998-08-24))
+
+str(list1)
+```
+```{r}
+list1[[1]][["age"]]=21
+list1[[2]]["age"]=21
+str(list1)
+```
+```{r}
+list1[[1]][c("bloodtype","registered")]=list("ab",T)
+str(list1)
+list1[[1]][[3]]=NULL
+str(list1)
+```
+
